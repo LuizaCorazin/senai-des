@@ -1,0 +1,27 @@
+CREATE DATABASE loja;
+
+USE loja;
+
+CREATE TABLE Usuarios(
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(160),
+  nascimento DATE,
+  endereço VARCHAR(100),
+  telefone VARCHAR(11)
+);
+
+CREATE TABLE Pedidos(
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    clienteId INTEGER,
+    datahora DATETIME,
+    nomeProduto VARCHAR(50),
+    valor DECIMAL(4,3),
+    FOREIGN KEY (clienteId) REFERENCES Usuarios(id)
+);
+
+INSERT INTO usuarios
+VALUES (DEFAULT, "Ciclano da silva", "2000-05-20", "rua sem saida, 120", "119124756");
+
+update usuarios
+set nascimento = "1990-05-25"
+where id = 1

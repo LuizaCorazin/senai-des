@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    gap: 10px;
+}
+
+.box{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}

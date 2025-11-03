@@ -1,0 +1,150 @@
+body{
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background-color:antiquewhite;
+    color: palevioletred;
+}
+
+header{
+    background: palevioletred;
+    color:antiquewhite;
+    padding: 20px;
+    text-align:center;
+}
+
+header h1{
+    margin: 0;
+    font-size: 28px;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color:antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav a:hover{
+    text-decoration: underline;
+
+}
+
+main{
+   display: flex;
+   justify-content: center;
+   padding: 40px;
+}
+
+.tabela {
+    width: 90%;
+    max-width: 1000px;
+    background: rgb(231, 213, 191);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: black;
+    padding: 20px;
+    transition:transform 0.80s ease;
+}
+
+.tabela h2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: palevioletred;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: palevioletred;
+    color: antiquewhite;
+}
+
+thead th{
+    padding: 14px;
+    text-align: left;
+    font-size: 16px;
+}
+
+td img {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: black;
+}
+
+.tabela img{
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+tbody tr:nth-child(odd){background-color: antiquewhite;}
+tbody tr:nth-child(even){background-color: pink;}
+
+tbody td{
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+tbody td a{
+    color:#2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+tbody td a:hover{
+    color:#2980b9;
+    text-decoration: underline;
+}
+
+tbody tr{
+    transition: scale(2);
+    filter: brightness(0.95);
+}
+
+tbody tr:hover {
+    transform: scale(1.01);
+    filter: brightness(0.95);
+}
+
+.preco {
+    color: rgb(99, 20, 33);
+    font-weight: bold ;
+}
+
+.estoque{
+    font-weight: bold;
+}
+
+.estoque.baixo{
+    color: deeppink;
+}
+
+.estoque.alto{
+    color: blue;
+}
+
+footer {
+    background: palevioletred;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+  <center><h1>Lanchonete Seu Zé</h1>
+   <hr>
+   <h3>Peça seu lanche!</h3>
+   </center>
+   <form action=""method="">
+    <p> <label for="nome">Nome Completo</label>
+
+   <input type="text" id="nome" placeholder="Insira seu nome"required/>
+    </p>
+    <p>
+        <label for="datanasc">Data de Nascimento</label>
+        <input id ="datanasc" type="date"/>
+    </p>
+    <p>
+        <label for="indica">Numa escala de 1 a 5 como você nos indicaria ?</label>
+        <input id="indica" type="number" min="1"
+        max="5"/>
+    </p>
+    <p>
+        <label for="email">E-mail</label>
+        <input id="email" type="email"
+        placeholder="informe seu E-mail" required/>
+    </p>
+    <p>
+        <label for="cor">Cor Favorita</label>
+        <input id="cor" type="color"/>
+    </p>
+    <p>
+        <label for="volume">Em qual volume você ouve musica (0 a 100)</label>
+        <input id="volume" type="range" min="0" max="100" value="50" oninput="valorVolume.textContent = this.value"/>
+        <span id="valorVolume">50</span>
+        <style>
+            #volume {
+                accent-color: pink;
+            }
+        </style>
+
+    </p>
+   
+<fieldset>
+    <legend>genero</legend>
+    <input type="radio" id="masc"
+    name = "genero" />
+ 
+    <label for="masc">masculino</label>
+
+    <input type="radio" id="fem"
+    
+ 
+    <label for="fem">masculino</label>
+   
+
+  <style>
+    #masc {
+                accent-color: red;
+            }
+
+    #fem {
+                accent-color: pink;
+            }
+  </style>
+   
+</fieldset>
+<br>
+
+<fieldset>
+    <legend> monte seu lanche </legend>
+    <input type="checkbox" id="salada"/>
+    <label for= "salada">Salada</label>
+    <br>
+    <!----------------------------------->
+     <input type="checkbox" id="hamb"/>
+    <label for= "hamb">Hamburguer</label>
+    <br>
+     <!----------------------------------->
+     <input type="checkbox" id="bacon"/>
+    <label for= "bacon">Bacon</label>
+    <br>
+     <!----------------------------------->
+     <input type="checkbox" id="cebola"/>
+    <label for= "cebola">Cebola</label>
+    <br>
+     <!----------------------------------->
+     <input type="checkbox" id="mai"/>
+    <label for= "mai">Maionese</label>
+    <br>
+    <!----------------------------------->
+     <input type="checkbox" id="queijo"/>
+    <label for= "queijo">Queijo</label>
+    <br>
+    <!----------------------------------->
+    <input type="checkbox" id="pre"/>
+    <label for= "pre">Presunto</label>
+    <br>
+
+   <style>
+    #salada {
+                accent-color: green;
+            }
+
+    #hamb {
+                accent-color: brown;
+            }
+
+    #bacon {
+                accent-color: red;
+            }
+    #cebola {
+                accent-color: blue;
+            }
+    #mai {
+        accent-color: purple;
+    }
+    #pre {
+        accent-color:salmon;
+    }
+    #queijo {
+        accent-color:yellow;
+    }
+
+
+  </style>
+
+</fieldset>
+
+<fieldset>
+     <legend>escolha sua bebida</legend>
+     <input type="checkbox" id="coca"/>
+     <label for= "coca">Coca Cola</label>
+     <br>
+     <img src = "coca.webp" width ="150" height = "150">
+     <br>
+     <!----------------------------------->
+     <input type="checkbox" id="agua"/>
+     <label for= "agua">agua</label>
+     <br>
+     <img src = "agua.png" width ="150" height = "150">
+     <br>
+     <!----------------------------------->
+     <input type="checkbox" id="sucl"/>
+     <label for= "sucl">Suco de laranja</label>
+     <br>
+     <img src = "laranja.webp" width ="150" height = "150">
+     <br>
+     <!----------------------------------->
+     <input type="checkbox" id="sucu"/>
+     <label for= "sucu">suco de uva</label>
+     <br>
+     <img src = "uva.png" width ="150" height = "150">
+     <br>
+    
+</fieldset>
+<label for="cidade">informe a cidade</label>
+<select id="cidade">
+    <option> jaguariuna</option>
+    <option> amparo</option>
+    <option> arcadas</option>
+    <option> pedreira</option>
+</select>
+
+</form>
+</form>
+</body>
+</html>

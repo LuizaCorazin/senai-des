@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: arial, sans-serif;
+    background: white;
+    line-height: 1.6;
+}
+header {
+ background:black;
+ color:wheat;
+ padding: 1rem 0;
+ text-align: center;
+
+}
+header h1 {
+     margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin:0 10 px;
+}
+nav ul li a {
+    color:whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover{
+    color:aqua;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background:wheat;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+h2 {
+    margin-bottom: 1rem;
+}
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.foto-perfil{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px white;
+}
+.sobre-informacoes {
+    flex: 1;
+}
+.sobre-informacoes h2{
+     margin-bottom: 0.5rem;
+}
+.sobre-informacoes p {
+    font-size: 1rem;
+    color:black;
+}
+.cards{
+    display: flex;
+    gap: 1rem;
+}
+.card{
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: o 4px 8px red;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(203, 158, 158, 0.2);
+}
+
+.hobby{
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle, black 0%, rgba(255, 255, 255, 0.711) 100%); 
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 1rem;
+}
+
+.hobby i{
+    font-size: 2rem.;
+    color: #white;
+}
+
+.hobby p, .hobby h3{
+    color: rgb(255, 255, 255);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}

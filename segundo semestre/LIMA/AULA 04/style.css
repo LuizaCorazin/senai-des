@@ -1,0 +1,85 @@
+body {
+    background : url('book.jpg')no-repeat;
+    background-size: cover;
+    font-family: arial, helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:rgba(222, 184, 135, 0.87);
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: antiquewhite;
+    text-align: center;
+}
+
+header {
+    background-color:rgba(245, 245, 220, 0.475);
+    color:rgba(222, 184, 135, 0.596);
+   -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+    padding:0;
+}
+nav ul li {
+    display:inline;
+    margin: 0 10px;
+}
+nav ul li a{
+    color:antiquewhite;
+}
+
+.banner{
+    text-align: center;
+    background-color:rgba(250, 235, 215, 0.547);
+    padding: 30px 0;
+     border: 1px solid antiquewhite;
+    border-radius: 8px;
+}
+section{
+    padding: 60px;
+    margin: 0 50px;
+}
+
+.cartao {
+    border: 1px solid antiquewhite;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom:20px;
+    display:inline-block;
+    width:1000px;
+    vertical-align: top;
+    background-color: rgba(250, 235, 215, 0.521);
+    transition: transform 0,3s, ease, box-shadow 0,3s ease;
+}
+
+.cartao:hover {
+    transform: translateY (-10px);
+    box-shadow: 0 8px 16px black;
+}
+.cartao img{
+    width: 30%;
+    border-radius: 5px;
+}
+#titulo{
+    border: 1px solid antiquewhite;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom:20px;
+    display:inline-block;
+    width:1000px;
+    vertical-align: top;
+    background-color: rgba(250, 235, 215, 0.521);
+    transition: transform 0,3s, ease, box-shadow 0,3s ease;
+    transform: translateY (-10px);
+    box-shadow: 0 8px 16px black;
+    font-family: cascadia code;
+    color:burlywood;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color:antiquewhite;
+}
