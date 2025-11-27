@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="salas.html">Salas</a>
+    <a href="alunos.html">Alunos</a>
+    <a href="reservas.html">Reservas</a>
+</header>
+
+<div class="container">
+    <h2>Cadastro de Reservas</h2>
+
+    <form>
+        <label>Data da Reserva:</label>
+        <input type="date">
+
+        <label>Hora:</label>
+        <input type="time">
+
+       <label>Nome do aluno:</label>
+        <input type="text" >
+
+        <label>Sala:</label>
+        <select>
+            <option>Laboratório A</option>
+            <option>Laboratório c</option>
+            <option>sala do senai</option>
+            <option>Sala de Reuniões</option>
+            <option>Sala de Reuniões 2</option>
+        </select>
+
+        <button>Registrar Reserva</button>
+    </form>
+
+    <h3>Reservas Registradas</h3>
+
+    <table>
+        <tr>
+            <th>ID Reserva</th>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Aluno</th>
+            <th>Sala</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2025-05-10</td>
+            <td>14:00</td>
+            <td>Clara Antonacci</td>
+            <td>Informatica</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2025-05-12</td>
+            <td>10:00</td>
+            <td>josé clarao</td>
+            <td>Sala do senai</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

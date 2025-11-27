@@ -1,0 +1,112 @@
+
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: var(--rosa-bebe);
+    margin: 0;
+    padding: 0;
+    color: var(--texto);
+}
+
+header {
+    background: var(--rosa);
+    padding: 18px;
+    text-align: center;
+    border-bottom: 4px solid var(--rosa-escuro);
+}
+
+header a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 8px 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+:root {
+    --rosa-bebe: #f8ddea;
+    --rosa-claro: #f3c5da;
+    --rosa: #ea9fc3;
+    --rosa-escuro: #d67fac;
+    --texto: #5a3d4e;
+    --branco: #ffffff;
+}
+header a:hover {
+    background: var(--rosa-escuro);
+}
+
+
+.container {
+    background: var(--branco);
+    width: 85%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+h2, h3 {
+    color: var(--rosa-escuro);
+    border-left: 6px solid var(--rosa-escuro);
+    padding-left: 10px;
+}
+
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid var(--rosa);
+    border-radius: 10px;
+    outline: none;
+    transition: .3s;
+}
+
+form input:focus, form select:focus {
+    border-color: var(--rosa-escuro);
+    box-shadow: 0 0 6px var(--rosa);
+}
+
+button {
+    background: var(--rosa-escuro);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+button:hover {
+    background: var(--rosa);
+    transform: scale(1.03);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+}
+
+th {
+    background: var(--rosa);
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background: var(--rosa-bebe);
+}
+
+tr:hover {
+    background: var(--rosa-claro);
+}

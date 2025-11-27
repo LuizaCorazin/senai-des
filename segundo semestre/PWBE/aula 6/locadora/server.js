@@ -1,18 +1,14 @@
-const express = require('express');
-const cors = require('cors');
+const express = require("express"); //importa um modulo
+const cors = require("cors");
 
-const clienteRoutes = require("./src/routes/cliente.routes");
-const filmeRoutes = require("./src/routes/filme.routes");
-const locacoesRoutes = require("./src/routes/locacoes.routes");
-const app = express();
+const UsuariosRoutes = require ("./src/routes/usuarios.routes");
 
+const app = express(); 
+
+app.use(cors()); 
 app.use(express.json());
-app.use(cors());
 
-app.use(clienteRoutes);
-app.use(filmeRoutes);
-app.use(locacoesRoutes);
-
+app.use(livrosRoutes);
 app.listen(3000, () => {
-    console.log("Servidor Online");
+    console.log("servidor online na porta 3000");
 });
